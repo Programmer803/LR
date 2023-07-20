@@ -2,11 +2,7 @@
 user = {
     'name' : 'unknown',
     'password' : 'unknown',
-    'totalwins' : 0,
-    'totalgames' : 0
 }
-
-# user = dict.fromkeys(['name', 'passwords'], 'unknown')
 
 register = False
 
@@ -24,6 +20,9 @@ while register == False :
         print('register successful. ')
         break
 
+print(user)
+print(User)
+
 while register == True :
     print('log in. ')
     name = input('please enter your name: ')
@@ -40,7 +39,10 @@ while register == True :
         'name' : name,
         'password' : password
         }
-        if user.items == User.items() :
+        if user.values() == User.values() :
             print('log in successful. wellcome,' + user['name'] + '.')
+            
+
+
             
 
